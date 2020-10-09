@@ -14,7 +14,7 @@ export function createBoard() {
                     </div>
                    `
            $('.title').val(null)
-            $('.main').append(board).droppable()
+            $('.main').append(board)
 
         }
     })

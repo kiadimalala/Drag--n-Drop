@@ -17,6 +17,7 @@ export function addTask() {
                 e.preventDefault();
                 $('#task').val(null)
                 $('.board').first().append(task_template)
+            
             }
         }
 
