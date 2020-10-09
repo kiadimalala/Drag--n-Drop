@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="./tailwind.min.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/jquery-ui.css">
     <title>Drag & Drop</title>
 </head>
@@ -16,10 +15,10 @@
         <div class="nav__left ml-20 text-2xl">
             <h1>Drag & Drop</h1>
         </div>
-        <div class="nav__right mr-40 ">
+        <div class="nav__right mr-40 flex justify-center items-center">
             <input type="text" class=" title focus:outline-none p-1 text-gray-800">
-            <button id="create" class="items-center bg-gray-300 text-gray-800 rounded-full focus:outline-none">
-                <i class="fa fa-plus-square w-8 h-8 flex flex-col items-center justify-center text-xl  "
+            <button id="create" class=" w-10 h-10 mx-1 bg-gray-300 text-gray-800 rounded-full focus:outline-none ">
+                <i class="fa fa-plus-square w-8 h-8 my-2  text-2xl flex justify-center items-center "
                     aria-hidden="true"></i>
             </button>
             <span class="m-1 font-bold">Create board</span>
@@ -73,6 +72,7 @@
     </div>
     </div>
 </body>
+<script src="https://kit.fontawesome.com/e74a38a9e1.js" crossorigin="anonymous"></script>
 <script src="./js/jquery.js">
 </script>
 <script type="module" src="./main.js"></script>
