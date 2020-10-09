@@ -1,7 +1,7 @@
-export let id = 1
-export function addId(){
-    id++
-}
+// export let id = 1
+// export function addId(){
+//     id++
+// }
 export function createBoard() {
     $(document).on('click', '#create', function () {
         let title = $('.title').val()
