@@ -16,7 +16,8 @@ export function addTask() {
             if (e.which === 13) {
                 e.preventDefault();
                 $('#task').val(null)
-                $('.board').first().append(task_template)
+                $('.board').first().append(task_template);
+                $('.task').draggable()
             
             }
         }

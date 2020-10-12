@@ -1,27 +1,20 @@
 import {
-    createBoard,
-    id
+    createBoard
 } from './js/createBoard.js'
 import {
     addTask
 } from './js/addTask.js'
 
-createBoard();
+import {deleteTask} from './js/deleteTask.js'
+import {dragTask} from './js/dragFonction.js'
+import {dropBoard} from './js/dropFonction.js'
+
+createBoard()
 addTask()
-$('.task').each(function () {
-$(this).draggable({
-helper: 'clone'
-})
-})
+dragTask()
+dropBoard()
+deleteTask()
 
-$('.board').each(function () {
-    $(this).droppable({
-        accept: '.task',
-        drop: function (e, ui) {
-            let droppedItem = $(ui.draggable)
-            $(this).append(droppedItem)
-        }
 
-    })
-})
+
 
